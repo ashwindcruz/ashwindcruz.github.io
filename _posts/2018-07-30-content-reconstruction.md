@@ -45,5 +45,15 @@ Consider the case where the lines are indeed reversed. I initially thought that 
 Also I realise that it's possible to specify with an initializer which variables it should target. I didn't go for this approach because I knew that while I currently just had the newly introduced input variable, before I was done, there would be plenty more new variables.  
 Run the general initializer first and then restore variables which you have pretrained weights for. 
 
-So I had an input, a network, and an output. Now I needed a loss. I set up a mean squared error loss between a _desired response_ and 
+So I had an input, a network, and an output. Now I needed a loss to optimize. It would have to be between the real image's response and the response of the 'image' being optimized. 
 
+One tip I have here when you are dealing with pushing images through networks is to start out with some dummy data. For example, just create a random numpy array in the shape of the expected image and treat that as input to your network. 
+Pros:
+* Easier to get the basic input you want. In this instance for example, you don't have to worry about downloading an image, ensuring you provide the correct path to it, resizing the image.
+* For other use cases, it's easier to play around with the batch size. If you wanted to do that with real data, you might have to fiddle a bit with how input is read from your disk to ensure you're getting the right batch size.
+Cons: 
+* Format of the array will be different from a real images. In some ways obvious (distribution of pixels) and in other subtle (numpy arrays default to float, images to uint8). I'll elaborate more on this a little later. 
+
+I used TF's assign operation to set the input variables to different values. First it was set to the 'real image' so I could collect the response to aim for. Then I set it to some white noise as this was the variable I wanted to train. Wrapped up the loss in an optimizer and tried to run it... success! The loss decreased. I changed the 'real image' from a fake numpy array to real data and the loss still seemed to go down which was a good sign. Obviously this time the loss started a lot higher since the our white noise input variable was a lot further from the real image. The white noise input variable I was optimizing came about from a numpy random array which by default gives us values between 0 and 1. I found that I could give this variable a 'helping hand' by multiplying it by 255 thereby making it a little closer to the real image at hand. This sped up training a little. 
+
+It's almost never sufficient to look at the loss to determine if your model is working correctly. The great thing about working with images is that you can always visually inspect the progress along the way and it should make some sense. I viewed the optimized image at a few points during the training. It made very little sense. Something was off but I wasn't quite sure what. 
