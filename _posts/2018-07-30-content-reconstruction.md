@@ -56,4 +56,20 @@ Cons:
 
 I used TF's assign operation to set the input variables to different values. First it was set to the 'real image' so I could collect the response to aim for. Then I set it to some white noise as this was the variable I wanted to train. Wrapped up the loss in an optimizer and tried to run it... success! The loss decreased. I changed the 'real image' from a fake numpy array to real data and the loss still seemed to go down which was a good sign. Obviously this time the loss started a lot higher since the our white noise input variable was a lot further from the real image. The white noise input variable I was optimizing came about from a numpy random array which by default gives us values between 0 and 1. I found that I could give this variable a 'helping hand' by multiplying it by 255 thereby making it a little closer to the real image at hand. This sped up training a little. 
 
-It's almost never sufficient to look at the loss to determine if your model is working correctly. The great thing about working with images is that you can always visually inspect the progress along the way and it should make some sense. I viewed the optimized image at a few points during the training. It made very little sense. Something was off but I wasn't quite sure what. 
+Another helpful change I found was to use a higher learning rate than the default. If you use the Adam optimizer, as I did, the default learning rate is *1e-3*. However, I think that because here we are continuoulsy optimizing the same, small set of values, the image pixels, the learning rate should be higher. I found that *1e-1* worked fine. 
+
+It's almost never sufficient to look at the loss to determine if your model is working correctly. The great thing about working with images is that you can always visually inspect the progress along the way and it should make some sense. I viewed the optimized image at a few points during the training and realised that things weren't quite adding up. The images I was viewing in the notebook mostly looked like noise, especially if I tried to reconstruct the image based on deeper features. However, the images I was saving to disk with cv2 looked much better. At the time, I put this down to a missing gap in understanding between plt and notebook interactions. 
+
+I realised that I needed some heavier debugging and decided it was time to set up one of my favourite tools: Tensorboard. 
+If you use TF, I would highly recommend using Tensorboard. Even if you're just interested in the loss and won't be visualizing any images along the way, use Tensorboard. 
+
+I'll talk about the full benefits of Tensorboard in another *post* but I'll mention briefly here how I used it. 
+
+For this project, here are the three ways I used Tensorboard: 
+* Plotting the loss
+* Images throughout training
+* Visual depiction of the graph
+
+Viewing the loss was fairly straightforward in this instance since there was only one loss (i.e. no validation) and it was for the same input each time. 
+The images I saw more closely matched the images I had saved to disk rather that those I was trying to display within the notebook which was a healthy confirmation that I was probably doing the right thing. There were some slight differences between the disk and Tensorboard images which I would later figure out were due to the way I was saving images with cv2. It was definitely a bit of a _gotcha_. 
+Finally, by looking at the *graph*, I could confirm that everything was hooked up the way I wanted it to be. One tip here is to name all your variables. I sometimes forget to do this and it comes back to bite me when I'm trying to access a particular node of a saved graph. It also makes debugging the graph slightly harder. For example, consider the two graphs *below*. Specific names are so much more helpful compared to generic 'Variables'. 
