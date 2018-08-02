@@ -6,9 +6,9 @@ date: 2018-07-30
 
 If you're reading this, I'm assuming that you've read the paper X and have some familiarity with it. 
 
-The focus of this post is on the _Content Representation/Reconstruction_ section of the paper, Section 2.1 to be precise. The authors use the title _Content Representation_ yet I've also included the word _Reconstruction_ here since that's what they did in Figure 1 and what I've attempted to do on my own as well. 
+The focus of this post is on the _Content Representation/Reconstruction_ section of the paper, Section 2.1 to be precise. The authors use the title _Content Representation_ yet I've also included the word _Reconstruction_ here since that's what they did in Figure 1 and what I've attempted to do on my own as well. Throughout this article, I'm essentially describing building this *notebook*. 
 
-Throughout working on this (sub) project, I ran into lots of issues. There's so much that happens between the description in the paper and a fully-fledged implementation that I've never had to consider before. While I don't consider what I've done to be exhausitive, even just considering Content Representation, it's quite thorough and I've decided to talk about the most significant _gotchas_ I ran into. As some of these might be obvious to some of you readers, I've shifted the _gotchas_ into a separate post and through this post I'll explicitly link to those mini write-ups. I hope that they help you avoid sinking as much time as I did into these issues. 
+Throughout working on this (sub) project, I ran into lots of issues. There's so much that happens between the description in the paper and a fully-fledged implementation that I've never had to consider before. While I don't consider what I've done to be exhausitive, even just considering Content Representation, it's quite thorough and I've decided to talk about the most significant _gotchas_ I ran into. As some of these might be obvious to some of you, I've shifted the _gotchas_ into a separate post and through this post I'll explicitly link to those mini write-ups. I hope that they help you avoid sinking as much time as I did into these issues. 
 
 So at the very start of the project, I wrote up the following TODO list: 
 - [ ] Obtain a pre-trained vgg-19 network. 
@@ -73,3 +73,10 @@ For this project, here are the three ways I used Tensorboard:
 Viewing the loss was fairly straightforward in this instance since there was only one loss (i.e. no validation) and it was for the same input each time. 
 The images I saw more closely matched the images I had saved to disk rather that those I was trying to display within the notebook which was a healthy confirmation that I was probably doing the right thing. There were some slight differences between the disk and Tensorboard images which I would later figure out were due to the way I was saving images with cv2. It was definitely a bit of a _gotcha_. 
 Finally, by looking at the *graph*, I could confirm that everything was hooked up the way I wanted it to be. One tip here is to name all your variables. I sometimes forget to do this and it comes back to bite me when I'm trying to access a particular node of a saved graph. It also makes debugging the graph slightly harder. For example, consider the two graphs *below*. Specific names are so much more helpful compared to generic 'Variables'. 
+
+With all the connections looking fine and the image transforming as expected, I spent some time digging into the plt and cv2 libraries to make sure I could obtain the same images at a given time step for different methods: plt, cv2, and tensorboard. You can read about that *here*. 
+
+Finally, the *figure below* shows my notebook's take on the images produced in the Content Reconstruction bit of Figure 1. 
+
+Overall, I probably spent about 20 hours coming up with this notebook. There were a few time consuming things that I left out (e.g. a brief dally with TF Eager, losing some unsaved work at one point and having to rewrite, ...) but this post covers most of what I did. 
+That's it for now! Next up will be Style Representation/Reconstruction which I'll link to once it's up and ready! 
