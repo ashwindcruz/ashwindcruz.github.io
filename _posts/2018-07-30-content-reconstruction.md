@@ -58,7 +58,7 @@ I used TF's assign operation to set the input variables to different values. Fir
 
 Another helpful change I found was to use a higher learning rate than the default. If you use the Adam optimizer, as I did, the default learning rate is *1e-3*. However, I think that because here we are continuoulsy optimizing the same, small set of values, the image pixels, the learning rate should be higher. I found that *1e-1* worked fine. In the set of figures below, you can see the differences in the loss and the final image produced when using both these learning rates: 
 
-<img src="/ashwindcruz.github.io/resources/images/2018-07-30-content-reconstruction/lr_final_large.png" width="45%"></img> <img src="https://cloud.githubusercontent.com/assets/4307137/10105290/2a183f3a-63ae-11e5-9380-50d9f6d8afd6.png" width="45%"></img> <img src="https://cloud.githubusercontent.com/assets/4307137/10105284/26aa7ad4-63ae-11e5-88b7-bc523a095c9f.png" width="45%"></img> <img src="https://cloud.githubusercontent.com/assets/4307137/10105288/28698fae-63ae-11e5-8ba7-a62360a8e8a7.png" width="45%"></img>
+<img src="/resources/images/2018-07-30-content-reconstruction/lr_final_large.png" width="45%"></img> <img src="https://cloud.githubusercontent.com/assets/4307137/10105290/2a183f3a-63ae-11e5-9380-50d9f6d8afd6.png" width="45%"></img> <img src="https://cloud.githubusercontent.com/assets/4307137/10105284/26aa7ad4-63ae-11e5-88b7-bc523a095c9f.png" width="45%"></img> <img src="https://cloud.githubusercontent.com/assets/4307137/10105288/28698fae-63ae-11e5-8ba7-a62360a8e8a7.png" width="45%"></img>
 
 
 [here]({{ site.url }})
