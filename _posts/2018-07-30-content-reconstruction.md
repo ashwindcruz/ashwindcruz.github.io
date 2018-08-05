@@ -70,7 +70,7 @@ I used TF's assign operation to set the input variables to different values. Fir
 
 Another helpful change I found was to use a higher learning rate than the default. If you use the Adam optimizer, as I did, the default learning rate is *1e-3*. However, I think that because here we are continuoulsy optimizing the same, small set of values, the image pixels, the learning rate should be higher. I found that *1e-1* worked fine. In the set of figures below, you can see the differences in the loss and the final image produced when using both these learning rates (smaller learning rate shown on the left): 
 
-<img src="/assests/images/2018-07-30-content-reconstruction/learning_rates/lr_loss_small.JPG" width="45%"> <img src="/assests/images/2018-07-30-content-reconstruction/learning_rates/lr_loss_large.JPG" width="45%">
+<img src="/assests/images/2018-07-30-content-reconstruction/learning_rates/lr_loss_small.jpg" width="45%"> <img src="/assests/images/2018-07-30-content-reconstruction/learning_rates/lr_loss_large.jpg" width="45%">
 <img src="/assests/images/2018-07-30-content-reconstruction/learning_rates/lr_final_small.png" width="45%"> <img src="/assests/images/2018-07-30-content-reconstruction/learning_rates/lr_final_large.png" width="45%">
 
 The loss y-axis doesn't cover the same range exactly (the images are from tensorboard from two different runs). However, the axis with the smaller learning rate has a higher maximum and minimum tick which helps highlight just how slowly learning was happening. 
