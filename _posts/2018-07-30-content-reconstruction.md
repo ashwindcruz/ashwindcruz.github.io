@@ -46,7 +46,7 @@ saver.restore(sess, checkpoint_path)
 ```
 
 Note that if you reversed the order of those two lines, the code would still run but it wouldn't be correct. 
-Consider the case where the lines are indeed reversed. I initially thought that the restore function would initialize the variables with the desired values and then the more generic initializer would simply initializer whatever remained. Instead, the general initializer would initialize all variables, including ones that were better left alone! If you would like to see how I came across this, have a look *here*.
+Consider the case where the lines are reversed. I initially thought that the restore function would initialize the variables with the desired values and then the more generic initializer would simply initializer whatever remained. Instead, the general initializer would initialize all variables, including ones that were better left alone! If you would like to see how I came across this, have a look *here*.
 Also I realise that it's possible to specify with an initializer which variables it should target. I didn't go for this approach because I knew that while I currently just had the newly introduced input variable, before I was done, there would be plenty more new variables.  
 Run the general initializer first and then restore variables which you have pretrained weights for. 
 
