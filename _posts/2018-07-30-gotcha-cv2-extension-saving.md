@@ -20,3 +20,5 @@ I found that PNG offered lossless compression and indeed if you look at the note
 Interestingly, the small differences do add up which you can see in the summed difference of arrays. However, the difference between the original image and the _jpg_ one is 10x more than between the original image and the _png_ one. 
 
 The takeaway here is to be aware that depending on the type of extension you choose to use with _[cv2.imwrite](https://docs.opencv.org/3.0-beta/modules/imgcodecs/doc/reading_and_writing_images.html#imwrite)_, you'll end up with different arrays. I spent an embarrasingly large amount of time being baffled by why the arrays looked so different! Hopefully that doesn't happen to you. 
+
+If you'd like to play around more, here's a [notebook](link) for you to tinker with! 

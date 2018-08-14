@@ -11,9 +11,10 @@ While working on the first part of my [style-transfer project](link?), I used Op
 After reading the documentation for _imwrite_ more carefully, I realised that cv2 was interpreting the channel order as _BGR_ instead of _RGB_ which was what pyplot was expecting. Converting between the two was fairly straightforward: 
 ```python
 image = cv2.imread('dummy_image.jpg')
-image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 ```
 
+Then when working with pyplot, you can use _rgb\_image_. 
 
 And here is the result: 
 
@@ -21,3 +22,5 @@ And here is the result:
 
 Note that if you had an image in the _RGB_ space and wanted to save it to disk using cv2, you'd need to convert it to _BGR_ first as cv2 saves images in that format. 
 In general, whether displaying images in a notebook or saving them to disk, if the colour scheme seems off, check the channel order. 
+
+If you'd like to play around more, here's a [notebook](link) for you to tinker with! 
