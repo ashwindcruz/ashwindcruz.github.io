@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Gotcha! TF Saver Initialization"
-date: 2018-08-10
+title: "Gotcha! TF Saver Subset Initialization"
+date: 2018-08-14
 ---
 
 While working on the first part of my [style-transfer project](link?), I dealt with two main variable groups: 
