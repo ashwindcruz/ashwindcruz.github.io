@@ -4,7 +4,7 @@ title: "Gotcha! TF Saver Subset Initialization"
 date: 2018-08-14
 ---
 
-While working on the first part of my [style-transfer project](link?), I dealt with two main variable groups: 
+While working on the first part of my [style-transfer project](https://github.com/ashwindcruz/style-transfer/blob/master/content_recs.ipynb), I dealt with two main variable groups: 
 * The input variable which was the image I was optimizing. 
 * The _VGG-19_ network, whose weights were frozen. 
 
@@ -37,4 +37,4 @@ Running the restore method of this object caused no errors!
 In my graph, the input variable was at the very start so I could specify the _var\_list_ the way I did. Perhaps in yours, the new variable might exist somewhere else in the list or maybe you even have several variables you want the Saver to ignore. In that case, just have a look at _all\_variables_ and tweak it as neccessary. Maybe you could write a _for_ loop to go through the list and ignore variables with certain names. 
 
 So when mixing around new and pre-trained variables, be sure create the Saver object appropriately. 
-If you'd like to play around more, here's a [notebook](link) for you to tinker with! 
+If you'd like to play around more, here's a [notebook](https://github.com/ashwindcruz/style-transfer/blob/master/gotchas/restore_subset_of_variables.ipynb) for you to tinker with! 

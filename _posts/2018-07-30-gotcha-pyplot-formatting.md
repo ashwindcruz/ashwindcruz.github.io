@@ -4,7 +4,7 @@ title: "Gotcha! Pyplot Image Displays"
 date: 2018-08-10
 ---
 
-While working on the first part of my [style-transfer project](link?), I used pyplot's [imshow](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.imshow.html) to diplay images in the notebook. However, it took me a little bit of playing around before the images looked as I expected them to. For reference, here is how I might load the origial image and what it would look like:
+While working on the first part of my [style-transfer project](https://github.com/ashwindcruz/style-transfer/blob/master/content_recs.ipynb), I used pyplot's [imshow](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.imshow.html) to diplay images in the notebook. However, it took me a little bit of playing around before the images looked as I expected them to. For reference, here is how I might load the origial image and what it would look like:
 ```python
 image = cv2.imread('../coastal_scene.jpg')
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)

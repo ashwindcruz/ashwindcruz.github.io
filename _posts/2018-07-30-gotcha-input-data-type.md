@@ -4,7 +4,7 @@ title: "Gotcha! TF Input Data Type"
 date: 2018-08-15
 ---
 
-While working on the first part of my [style-transfer project](link?), I found out the hard way that TF is very sensitive to the network's input's data type. 
+While working on the first part of my [style-transfer project](https://github.com/ashwindcruz/style-transfer/blob/master/content_recs.ipynb), I found out the hard way that TF is very sensitive to the network's input's data type. 
 
 I was tinkering around, trying to trace down a particular bug and in my frustration and tiredness, accidentally changed: 
 ```python
@@ -28,4 +28,4 @@ _int_ types would throw a different type of error earlier on, which is much more
 
 I'm not sure exactly why different _floats_ return these weird errors but they do so watch out! If you're not exactly sure of the type of your input data, be safe and cast it to _float32_. 
 
-If you'd like to experience these oddities for yourself, here's a [notebook](link) for you to tinker with! 
+If you'd like to experience these oddities for yourself, here's a [notebook](https://github.com/ashwindcruz/style-transfer/blob/master/gotchas/wrong_input_type.ipynb) for you to tinker with! 

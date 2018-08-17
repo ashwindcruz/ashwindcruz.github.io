@@ -4,7 +4,7 @@ title: "Gotcha! TF Variable Initialization Order"
 date: 2018-08-15
 ---
 
-While working on the first part of my [style-transfer project](link?), I had: 
+While working on the first part of my [style-transfer project](https://github.com/ashwindcruz/style-transfer/blob/master/content_recs.ipynb), I had: 
 * A new input variable which would have to be initialized from scratch. 
 * The _VGG-19_ network, whose weights would be initialized using pre-trained values from the checkpoint file. 
 
@@ -22,4 +22,4 @@ This clued me in to the fact the the correct way to initialize a combination of 
 
 This subtle difference can have insidious effects! If your _vgg19_ network was not initialized with pre-trained weights, it's possible that the effects aren't seen! For example, in my case, I was trying to find a new input image that had the same network response as another input image. In this instance, whether the weights are pre-trained or random, the optimization procedure can still attempt to match the reponses! The incorrect initialization would have eventually caught up to me when I started to make stronger assumptions about the network such as what deeper layers were encoding. If I wasn't using pre-trained weights, the network's layers would not have been capturing aspects such as abstract style and training down the pipeline would have come apart.  
 
-If you'd like to see for yourself the difference in output between correct and incorrect initialization orders, here's a [notebook](link) for you to tinker with! 
+If you'd like to see for yourself the difference in output between correct and incorrect initialization orders, here's a [notebook](https://github.com/ashwindcruz/style-transfer/blob/master/gotchas/init_order.ipynb) for you to tinker with! 

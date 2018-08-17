@@ -8,7 +8,7 @@ If you're reading this, I'm assuming that you've read the paper X and have some 
 
 The focus of this post is on the _Content Representation/Reconstruction_ section of the paper, Section 2.1 to be precise. The authors use the title _Content Representation_ yet I've also included the word _Reconstruction_ here since that's what they did in Figure 1 and what I've attempted to do on my own as well. Throughout this article, I'm essentially describing building this [notebook](style-transfer/content_recs.ipynb "Content Reconstruction"). 
 
-Throughout working on this (sub) project, I ran into lots of issues. There's so much that happens between the description in the paper and a fully-fledged implementation that I've never had to consider before. While I don't consider what I've done to be exhausitive, even just considering Content Representation, it's quite thorough and I've decided to talk about the most significant _gotchas_ I ran into. As some of these might be obvious to some of you, I've shifted the _gotchas_ into a separate post and through this post I'll explicitly link to those mini write-ups. I hope that they help you avoid sinking as much time as I did into these issues. 
+Throughout working on this (sub) project, I ran into lots of issues. There's so much that happens between the description in the paper and a fully-fledged implementation that I've never had to consider before. While I don't consider what I've done to be exhausitive, even just considering Content Representation, it's quite thorough and I've decided to talk about the most significant _gotchas_ I ran into. As some of these might be obvious to some of you, I've shifted the _gotchas_ into separate posts and throughout this post I'll explicitly link to those mini write-ups. I hope that they help you avoid sinking as much time as I did into these issues. 
 
 So at the very start of the project, I wrote up the following TODO list: 
 - [ ] Obtain a pre-trained vgg-19 network. 
@@ -34,9 +34,9 @@ I found the latter in a [zip file](http://download.tensorflow.org/models/vgg_19_
 Reading through it, I learnt that for what I was trying to do, I should just be loading the weights into the [model code](https://github.com/tensorflow/models/blob/master/research/slim/nets/vgg.py "VGG19 model code") and didn't need to go as far as trying to create a frozen graph. So that's what I did, supplying a placeholder as a input. 
 Lo and behold, feeding the placeholder with some random values, I obtained a response from a specific layer! Thanks to the tidy setup of the model file, it was quite easy to specify which layer I wanted features from. 
 
-Since it's the image that I needed to optimize, it would have to be a variable instead of a placeholder. I made the switch and ran into a an error when I tried to restore the weights of the pretrained vgg-19 network. I thought TF was smart enough to compare what was in the checkpoint file and what was in the current graph and restore variables that overlapped. Instead, it tried to restore all the variables in my current graph using the information in the checkpoint and broke when it encountered the new input variable I introduced which was not in the original checkpoint. Thankfully I found [this link](https://stackoverflow.com/a/47917561 "Thank you StackOverflow!") which showed me that I could specify which variables I would be loading when I instantiated the Saver. It was a little counterintuitive as I had initially thought of the TF Saver object as primarily for _saving_ models and while it was odd that it could also load models, it was even more odd that you had to specify what the Saver would be loading when you created the Saver! While the link I mentioned earlier should give you an idea on how to restore specific variables, I've also written a *short snippet* explaining the process. It's also in the notebook. 
+Since it's the image that I needed to optimize, it would have to be a variable instead of a placeholder. I made the switch and ran into a an error when I tried to restore the weights of the pretrained vgg-19 network. I thought TF was smart enough to compare what was in the checkpoint file and what was in the current graph and restore variables that overlapped. Instead, it tried to restore all the variables in my current graph using the information in the checkpoint and broke when it encountered the new input variable I introduced which was not in the original checkpoint. Thankfully I found [this link](https://stackoverflow.com/a/47917561 "Thank you StackOverflow!") which showed me that I could specify which variables I would be loading when I instantiated the Saver. It was a little counterintuitive as I had initially thought of the TF Saver object as primarily for _saving_ models and while it was odd that it could also load models, it was even more odd that you had to specify what the Saver would be loading when you created the Saver! While the link I mentioned earlier should give you an idea on how to restore specific variables, I've also written a [short snippet](/blog/2018/08/14/gotcha-saver-initialization) explaining the process. It's also in the notebook. 
 
-Then another very odd error. Long story short, sometime during my attempts to fix the Saver issue, I changed the input variable type from float32 to float64. I can't recall exaclty what led to this decision but I imagine it happened in one of those 'if I just keep fiddling with various knobs, perhaps I'll stumble across the required fix'. This took a _very_ *very* long time to debug since the error was completely uninformative. Ironically, now when I see an uninformative error, one of my first checks is the types of the variables I'm using. If any of you are interested, you can find the *long* story here. 
+Then another very odd error. Long story short, sometime during my attempts to fix the Saver issue, I changed the input variable type from float32 to float64. I can't recall exaclty what led to this decision but I imagine it happened in one of those 'if I just keep fiddling with various knobs, perhaps I'll stumble across the required fix'. This took a _very_ *very* long time to debug since the error was completely uninformative. Ironically, now when I see an uninformative error, one of my first checks is the types of the variables I'm using. If any of you are interested, you can find the [long story here](/blog/2018/08/15/gotcha-input-data-type). 
 
 Now that I had one new variable and one pretrained network, initialization was a two stage process:
 
@@ -46,7 +46,7 @@ saver.restore(sess, checkpoint_path)
 ```
 
 Note that if you reversed the order of those two lines, the code would still run but it wouldn't be correct. 
-Consider the case where the lines are reversed. I initially thought that the restore function would initialize the variables with the desired values and then the more generic initializer would simply initializer whatever remained. Instead, the general initializer would initialize all variables, including ones that were better left alone! If you would like to see how I came across this, have a look *here*.
+Consider the case where the lines are reversed. I initially thought that the restore function would initialize the variables with the desired values and then the more generic initializer would simply initializer whatever remained. Instead, the general initializer would initialize all variables, including ones that were better left alone! If you would like to see how I came across this, have a look [here](/blog/2018/08/15/gotcha-variable-initialization-order).
 Also I realise that it's possible to specify with an initializer which variables it should target. I didn't go for this approach because I knew that while I currently just had the newly introduced input variable, before I was done, there would be plenty more new variables.  
 Run the general initializer first and then restore variables which you have pretrained weights for. 
 
@@ -80,24 +80,40 @@ It's almost never sufficient to look at the loss to determine if your model is w
 I realised that I needed some heavier debugging and decided it was time to set up one of my favourite tools: Tensorboard. 
 If you use TF, I would highly recommend using Tensorboard. Even if you're just interested in the loss and won't be visualizing any images along the way, use Tensorboard. 
 
-I'll talk about the full benefits of Tensorboard in another *post* but I'll mention briefly here how I used it. 
+The full benefits I've experienced from Tensorboard is a tale for another day. 
+To tide you over, I'll mention briefly here how I used it. 
 
-For this project, here are the three ways I used Tensorboard: 
+For this project, I used Tensorboard to: 
 * Plotting the loss
 * Images throughout training
 * Visual depiction of the graph
 
 Viewing the loss was fairly straightforward in this instance since there was only one loss (i.e. no validation) and it was for the same input each time. 
-The images I saw more closely matched the images I had saved to disk rather that those I was trying to display within the notebook which was a healthy confirmation that I was probably doing the right thing. There were some slight differences between the disk and Tensorboard images which I would later figure out were due to the way I was saving images with cv2. It was definitely a bit of a _gotcha_. 
+The images I saw more closely matched the images I had saved to disk rather that those I was trying to display within the notebook which was a healthy confirmation that I was probably doing the right thing. There were some slight differences between the disk and Tensorboard images which I would later figure out were due to the way I was saving images with cv2. It was definitely a bit of a [gotcha](http://localhost:4000/blog/2018/08/10/gotcha-cv2-pyplot-channel-order). 
 Finally, by looking at the graph, I could confirm that everything was hooked up the way I wanted it to be. One tip here is to name all your variables. I sometimes forget to do this and it comes back to bite me when I'm trying to access a particular node of a saved graph. It also makes debugging the graph slightly harder. For example, consider the two graphs below. Specific names are so much more helpful compared to generic 'Variables'. 
 
 <img src="/assests/images/2018-07-30-content-reconstruction/graphs/bad.png" width="45%"> <img src="/assests/images/2018-07-30-content-reconstruction/graphs/good.png" width="45%">
 
 When I initially had the less helpful graph, I could still tell it was correct since the assign operations the real and white noise variables were tied to had been named. Also, the order of the suffixes matches the order the variables were created in. Nonetheless, I quickly reran the code with properly named variables to obtain the good graph. 
 
-With all the connections looking fine and the image transforming as expected, I spent some time digging into the plt and cv2 libraries to make sure I could obtain the same images at a given time step for different methods: plt, cv2, and tensorboard. You can read about that *here*. 
+With all the connections looking fine and the image transforming as expected, I spent some time digging into the plt and cv2 libraries to make sure I could obtain the same images at a given time step for different methods: plt, cv2, and tensorboard. You can read about that [here](http://localhost:4000/blog/2018/08/10/gotcha-pyplot-formatting). 
 
-Finally, the *figure below* shows my notebook's take on the images produced in the Content Reconstruction bit of Figure 1. 
+Finally, the figure below shows my notebook's take on the images produced in the Content Reconstruction bit of Figure 1. The images from left to right are: 
+* Original image
+* Reconstruction using _conv1\_2_
+* Reconstruction using _conv2\_2_
+* Reconstruction using _conv3\_2_
+* Reconstruction using _conv4\_2_
+* Reconstruction using _conv5\_2_ 
 
-Overall, I probably spent about 20 hours coming up with this notebook. There were a few time consuming things that I left out (e.g. a brief dally with TF Eager, losing some unsaved work at one point and having to rewrite, ...) but this post covers most of what I did. 
+<img src="/assests/images/2018-07-30-content-reconstruction/coastal_scene_resized.png" width="15%"> <img src="/assests/images/2018-07-30-content-reconstruction/finals/img_1_2.png" width="15%"> <img src="/assests/images/2018-07-30-content-reconstruction/finals/img_2_2.png" width="15%"> <img src="/assests/images/2018-07-30-content-reconstruction/finals/img_3_2.png" width="15%"> <img src="/assests/images/2018-07-30-content-reconstruction/finals/img_4_2.png" width="15%"> <img src="/assests/images/2018-07-30-content-reconstruction/finals/img_5_2.png" width="15%">
+
+These were all obtained after 100,000 steps of training except for the _conv2\_2_ case. That image was pulled after about 10,000 steps. As optimization for that feature layer went along, it started to pick up some odd artifcats producing the image below: 
+
+<img src="/assests/images/2018-07-30-content-reconstruction/finals/img_2_2_bad.png" width="15%">
+
+Perhaps regularization of some sort is required and I'll look into that down the line. 
+For the other images, 100,000 was probably an unnecessarily large number of steps. When you tinker around, you might find a much lower number you're happier to work with. If so, go for it. 
+
+Overall, I probably spent about 20 hours coming up with this notebook. There were a few time consuming things that I left out (e.g. a brief dally with TF Eager, losing some unsaved work at one point and having to rewrite, the blogging, ...) but this post covers most of what I did. 
 That's it for now! Next up will be Style Representation/Reconstruction which I'll link to once it's up and ready! 
