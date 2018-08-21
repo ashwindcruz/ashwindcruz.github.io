@@ -4,7 +4,7 @@ title: "Gotcha! Pyplot Image Displays"
 date: 2018-08-10
 ---
 
-While working on the first part of my [style-transfer project](https://github.com/ashwindcruz/style-transfer/blob/master/content_recs.ipynb), I used pyplot's [imshow](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.imshow.html) to diplay images in the notebook. However, it took me a little bit of playing around before the images looked as I expected them to. For reference, here is how I might load the origial image and what it would look like:
+While working on the first part of my [style-transfer project](/blog/2018/07/30/content-reconstruction), I used pyplot's [imshow](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.imshow.html) to diplay images in the notebook. However, it took me a little bit of playing around before the images looked as I expected them to. For reference, here is how I might load the original image and what it would look like:
 ```python
 image = cv2.imread('../coastal_scene.jpg')
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -45,11 +45,11 @@ formatted_image = np.asarray(image_rounded, dtype=np.uint8)
 
 The _rint_ function round _floats_ to _ints_ properly. If I skipped that, values like 1.5 are _truncated_ to 1. Honestly, the images would likely look the same whether the _floats_ are rounded or truncated but the former is more 'correct' so I chose that instead. Plus, once this image formatting is wrapped up in a separate function, you won't even have to go through the hassle of typing that extra line each time you want to format an image so why not go all the way?
 
-For comparison, I'll shown the original image on the left and the noisy, formatted image on the right:
-<img src="/assests/images/2018-07-30-content-reconstruction/pyplot_formatting/coastal_scene.jpg" width="45%"> <img src="/assests/images/2018-07-30-content-reconstruction/pyplot_formatting/noisy_int.png" width="45%">
+For comparison, I've shown the original image on the left and the noisy, formatted image on the right:
+<img src="/assests/images/2018-07-30-content-reconstruction/pyplot_formatting/corrected.png" width="45%"> <img src="/assests/images/2018-07-30-content-reconstruction/pyplot_formatting/noisy_int.png" width="45%">
 
 If you look carefully, you'll notice that the images aren't quite the same. This is because there's still the additive noise introduced and the formatting doesn't get rid of that completely. Lots of previously smaller pixel channel values are now at 255. However, in the image optimization context, as training progresses, fewer pixels will be out of bounds and this effect will be less noticeable. 
 
 So when working with images and pyplot, be wary of the little subtleties! I advise you to create a formatting function (it would probably contain the 3 lines from the last snippet) and use that on an image before displaying it. 
 
-If you'd like to play around more, here's a [notebook](link) for you to tinker with! It's even got a copy of the formatting function that I mentioned if you would like.  
+If you'd like to play around more, here's a [notebook](https://github.com/ashwindcruz/style-transfer/blob/master/gotchas/plt_image_formatting.ipynb) for you to tinker with! It's even got a copy of the formatting function that I mentioned if you would like.  

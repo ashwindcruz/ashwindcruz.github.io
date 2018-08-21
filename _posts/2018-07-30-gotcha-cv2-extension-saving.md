@@ -4,7 +4,7 @@ title: "Gotcha! CV2 JPEG vs PNG"
 date: 2018-08-10
 ---
 
-While working on the first part of my [style-transfer project](https://github.com/ashwindcruz/style-transfer/blob/master/content_recs.ipynb), I ran into lots of image issues. 
+While working on the first part of my [style-transfer project](/blog/2018/07/30/content-reconstruction), I ran into lots of image issues. 
 One of the issues was that cv2 uses a BGR channel order instead of RGB, the latter is more common. This resulted in a lot of my images seeming to have a weird tint. I talk about that [here](/blog/2018/08/10/gotcha-cv2-pyplot-channel-order.html). This post will be focusing on a different issue I found while trying to solve the channel issue. 
 
 Before I found the correct fix, I did get desperate enough to try looking at some of the raw pixel values and found something very suprising: I was specifying a particular array to be saved but upon loading the saved image, the loaded array had different pixel values! 
