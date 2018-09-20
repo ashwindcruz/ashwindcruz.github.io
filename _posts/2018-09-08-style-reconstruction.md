@@ -6,6 +6,7 @@ date: 2018-09-08
 
 If you're reading this, I'm assuming that you've read the paper _[Image Style Transfer Using Convolutional Neural Networks](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf)_ and have some familiarity with it. 
 
+**Make a note about what is lost when digitizing**.
 Here is the image I'll be working with for this post: 
 
 <img src="/assests/images/2018-09-08-style-reconstruction/coastal_scene_resized.png" width="60%">
@@ -18,7 +19,8 @@ Working through this section was a whole lot easier than the previous one. Prima
 
 With that being said, I did run into some unforeseen issues, some of which I'll talk about in this post and others, more general issues, will be covered in further _gotcha_ posts. 
 
-So the first step in this section was coding up a function to compute the gram matrix, used in equation 3 of the paper. While it was very clear what they were doing, an efficient implementation wasn't obvious to me until I read the description of it on [Wikipedia](https://en.wikipedia.org/wiki/Gramian_matrix). To summarize, you can compute the gram matrix **G** by **V<sup>T</sup>V** where the columns of **V** are the vectorized feature maps for a particular layer. That was a very handy definition that saved me from trying to interpret equation 3 directly and write _for_ loops. I also wrote a function to implement equation 4 but that was relatively straightforward. Initially I did have an error in that implementation with regards to the placement of the squaring function but it didn't take too long to debug. If you're interested in that issue, have a look at this **gotcha**. 
+So the first step in this section was coding up a function to compute the gram matrix, used in equation 3 of the paper. While it was very clear what they were doing, an efficient implementation wasn't obvious to me until I read the description of it on [Wikipedia](https://en.wikipedia.org/wiki/Gramian_matrix). To summarize, you can compute the gram matrix **G** by **V<sup>T</sup>V** where the columns of **V** are the vectorized feature maps for a particular layer. That was a very handy definition that saved me from trying to interpret equation 3 directly and write _for_ loops. I also wrote a function to implement equation 4 but that was relatively straightforward. While working on these functions, I ran into a small bump regarding the use of *tf_shape*. You can read about that at this **gotcha**. 
+
 
 With that done, I ran into the first major complication for this section: I wanted the number of layers used to be a parameter. When implementing the content reconstruction, the graph always had the same(ish) nodes. Yes, you chose which layer you wanted to base the reconstruction on but it was always just one layer used. With style reconstruction however, your choices are:
 * Layer 1
