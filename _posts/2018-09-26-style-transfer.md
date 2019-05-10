@@ -3,7 +3,7 @@ layout: posts
 title: "Style Transfer"
 date: 2018-09-26
 ---
-Hello world
+
 If you're reading this, I'm assuming that you've read the paper _[Image Style Transfer Using Convolutional Neural Networks](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf)_ and have some familiarity with it. 
 
 Here are the images I'll be working with for this section, the content images are on the left, the style image is on the right:
