@@ -8,7 +8,7 @@ date: 2019-05-07
 
 I recently completed Coursera's *[Learning How to Learn: Powerful mental tools to help you master tough subjects](https://www.coursera.org/learn/learning-how-to-learn/home/welcome)*. While this course seems targeted at high school and university students, there are many applicable lessons to those who don't fall in this demographic. Upon completing the course, I was recommended Coursera's *[Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential](https://www.coursera.org/learn/mindshift/home/welcome)*. I think this second course will have similar content to the first but targeted at an older demographic. I'll be starting this soon but before I do, I wanted to summarize some of the key ideas that I found especially insightful and helpful from *Learning How to Learn*. 
 
-__There's quite a bit here but you may only be interested in some. Feel free to skip through as you please!__  
+__There's quite a bit here but you may only be interested in some of the content. Feel free to skip through as you please!__  
 [Two modes of thinking](#two-modes-of-thinking)  
 [Chunking](#chunking)  
 [Habit Forming](#habit-forming)  
