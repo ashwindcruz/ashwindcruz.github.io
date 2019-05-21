@@ -4,14 +4,13 @@ title: "Learning to Learn"
 date: 2019-05-07
 ---
 
-## Summarizing: Learning How to Learn
-
 I recently completed Coursera's *[Learning How to Learn: Powerful mental tools to help you master tough subjects](https://www.coursera.org/learn/learning-how-to-learn/home/welcome)*. While this course seems targeted at high school and university students, there are many applicable lessons to those who don't fall in this demographic. Upon completing the course, I was recommended Coursera's *[Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential](https://www.coursera.org/learn/mindshift/home/welcome)*. I think this second course will have similar content to the first but targeted at an older demographic. I'll be starting this soon but before I do, I wanted to summarize some of the key ideas that I found especially insightful and helpful from *Learning How to Learn*. 
 
-__There's quite a bit here but you may only be interested in some of the content. Feel free to skip through as you please!__  
+__There's quite a bit here but you may only be interested in some of the content. Feel free to skip through as you please!__
+
 [Two modes of thinking](#two-modes-of-thinking)  
 [Chunking](#chunking)  
-[Habit Forming](#habit-forming)  
+[Forming Habits](#forming-habits)  
 [Memory Development](#memory-development)  
 [Optimizing Sleep](#optimizing-sleep)  
 [Exercise Benefits](#exercise-benefits)   
@@ -30,8 +29,8 @@ Enter the diffuse mode. In this state, the mind is wandering around a little mor
 While I've heard a little about these two forms of thinking in the past, this was the first time I've learned about them as explicitly. The workings of the focused mode weren't a revelation since that's the mode I actively engage. It was learning about the diffuse mode that I found especially useful. I've definitely had many instances throughout my life where I bang my head against the wall with regards to a particular problem only to step away from it and solve it almost instantly upon returning. I always thought of this as my brain just needing a short break to recharge and while that is part of it, I think a bigger role here is the diffuse mode. When I stepped away, I allowed my brain to explore different avenues to solve the problem that my focused mode was too stubborn to do.
 
 Moving forward, I am definitely going to be more active in allowing my brain to engage in the diffuse mode. Here are a few activities that would constitute as stepping back, during which time the brain will engage the diffuse mode: 
-* Exercise
-* Sleep
+* Exercising
+* Sleeping
 * Socializing with some friends and family
 * Playing a musical instrument
 * Painting
@@ -62,7 +61,7 @@ Once you have a library of chunks, try jumping between them or interweaving them
 
 If chunking sounds like a lot of work, it's because it is but the payout is huge. However, given that it is energy intensive, when you are trying to form a chunk, focus! Don't waste finite mental resources on distractions when building chunks. 
 
-### Habit Forming
+### Forming Habits
 
 Habits can be broken down into 4 steps: 
 1. The cue: Something happens that requires a response. For example, this could be an alarm that you've set to remind you to begin a task. You'll react to this cue, positively or negatively. 
@@ -79,12 +78,15 @@ Cues are generally influenced by:
 * Time
 * How you feel
 
-Perhaps you may recognize other factors that control how you may react to cues. As best as you can, try to set these factors to be favourable. Anything you can do to increase the chances of reacting positively to the cue brings you closer to forming a healthy habit.  
-Once you get to the routine stage, you are closer to the reward stage. The reward stage will then convince your mind that reacting to the cue with this routine was a good idea and you'll face less resistance the next time the cue presents itself.  
+Perhaps you may recognize other factors that control how you may react to cues. As best as you can, try to set these factors to be favourable. Anything you can do to increase the chances of reacting positively to the cue brings you closer to forming a healthy habit. Once you get to the routine stage, you are closer to the reward stage. The reward stage will then convince your mind that reacting to the cue with this routine was a good idea and you'll face less resistance the next time the cue presents itself.  
 
-One way to overcome this initial resistance to the task at hand is to focus on the process rather than the product. It's easier to enlist the brain with a process, rather than a product. Instead of sitting down and telling yourself "I'm going to finish this particular feature for the web application", tell yourself, "I'm going to work on this particular feature for 25 minutes". An easy way to do this is using pomodoros. Work for 25 minutes, relax for 5. Sometimes perhaps you get into the groove and want to keep going and by all means, go for it. However, I often find that after a certain period of continuous working, my brain starts to get a little stuck. Generally by this point, I have become focused on the product rather than the process. I'm likely to force myself to keep going despite the lack of progress. Rarely does this accomplish anything except to get me more frustrated and tired. By taking a break, I find that my mind has time to recharge and when I come back to the task at hand, I do better (this is also because my mind has had time to work in the diffuse mode and get out of its rut!). Always remember that the goal of a session is the process. 
+One way to overcome this initial resistance to the task at hand is to focus on the process rather than the product. It's easier to enlist the brain with a process, rather than a product. Instead of sitting down and telling yourself "I'm going to finish this particular feature for the web application", tell yourself, "I'm going to work on this particular feature for 25 minutes". An easy way to do this is using pomodoros. Work for 25 minutes, relax for 5. Sometimes perhaps you get into the groove and want to keep going and by all means, go for it. 
 
-Once you've accomplished that task (working for 25 minutes, not finishing the feature), reward yourself. It's extremely important to reward your accomplishments, however small. Only when your brain can expect rewards do habits form. I think more than working continuously for too long, this has been my biggest stumbling block when trying to form healthy habits. I've often told myself that accomplishing the task I set out to do should be a reward in its own right but I'm beginning to realize that my brain isn't quite wired that way. Especially at the start of the habit forming stage, the brain really needs rewards to get on-board and dedicate resources to the task you're trying to accomplish. If you just keep pressing on, your brain, losing out on rewards for good behaviour, will start to turn on you. What's the point of going on if there's no reward? 
+However, I often find that after a certain period of continuous working, my brain starts to get a little stuck. Generally by this point, I have become focused on the product rather than the process. I'm likely to force myself to keep going despite the lack of progress. Rarely does this accomplish anything except to get me more frustrated and tired. By taking a break, I find that my mind has time to recharge and when I come back to the task at hand, I do better (this is also because my mind has had time to work in the diffuse mode and get out of its rut!). Always remember that the goal of a session is the process. 
+
+Once you've accomplished that task (working for 25 minutes, not finishing the feature), reward yourself. It's extremely important to reward your accomplishments, however small. Only when your brain can expect rewards do habits form. I think more than working continuously for too long, this has been my biggest stumbling block when trying to form healthy habits. 
+
+I've often told myself that accomplishing the task I set out to do should be a reward in its own right but I'm beginning to realize that my brain isn't quite wired that way. Especially at the start of the habit forming stage, the brain really needs rewards to get on-board and dedicate resources to the task you're trying to accomplish. If you just keep pressing on, your brain, losing out on rewards for good behaviour, will start to turn on you. What's the point of going on if there's no reward? 
 
 Aside from believing that the accomplishment of the task should be its own reward, the other reason I've avoided more 'basic' rewards (e.g. some YouTube time, a snack, etc) is because I've had guilt associated with these tasks. I sometimes catch myself thinking that I shouldn't be relaxing when the feature that I want to finish up isn't done yet. However, this betrays that 'product' thinking has replaced 'process' thinking. Remember that you have finished the task of working at the process for some amount of time and that task should be rewarded even if the 'greater' task of finishing the feature is still a work in progress. 
 
@@ -111,12 +113,18 @@ On the topic of memory, most of us know that there is a long-term memory and a s
 
 Sleep is important. 
 
-I've come across this in multiple sources but when push comes to shove, sleep is normally the first thing to take a hit. This course has just been the most recent in a long line of sources encouraging me to get enough sleep. However, there were also a few other aspects covered here that I found quite interesting. For one, here they explicitly state that sleeping flushes the brain clean. I can't recall the technicalities of it but during sleep, the brain gets a chance to refresh itself. However, working on something before sleeping or explicitly setting in your mind that you want to focus on something (just before sleep) will encourage the brain to dream about this. I don't think anyone can make claims that this will work all the time but I have often found that whatever I'm dwelling on before sleeping often comes back to me while dreaming. By encouraging this, you are encouraging the diffuse mode of your brain to tinker away, forming connections that you might not have been able to during the focused mode. 
+I've come across this in multiple sources but when push comes to shove, sleep is normally the first thing to take a hit. This course has just been the most recent in a long line of sources encouraging me to get enough sleep. However, there were also a few other aspects covered here that I found quite interesting. 
+
+For one, they explicitly state that sleeping flushes the brain clean. I can't recall the technicalities of it but during sleep, the brain gets a chance to refresh itself. However, working on something before sleeping or explicitly setting in your mind that you want to focus on something (just before sleep) will encourage the brain to dream about this. I don't think anyone can make claims that this will work all the time but I have often found that whatever I'm dwelling on before sleeping often comes back to me while dreaming. By encouraging this, you are encouraging the diffuse mode of your brain to tinker away, forming connections that you might not have been able to during the focused mode. 
 
 Another helpful tip from this course was to jot down your unfinished todos before you hit the hay. These tasks likely take up space in your working memory. By writing them down, you free up space in your working memory and allow the brain to better recharge. An added benefit of this is that by jotting it down, you're focusing explicitly on it, potentially allowing your diffuse mind to think about them while you sleep. 
 
 ### Exercise Benefits
-The importance of exercise was stated several times during the course. It was spread about through the other material but it did seem important enough to potentially warrant its own video(s). It definitely made a large enough impact that I figured it deserved its own section in this write-up. The most common mention of exercise during this course was as a useful activity to help engage the diffuse mode. If you exercise after working on a problem or trying to study a particular topic, during your exercise, the brain's diffuse mode is chipping away at those concepts. Even if it's not an intensive exercise like running, something as simple as a walk can really help the learning process. Some material was also cited to show that exercise helps the hippocampus grow new nerves. This increases your brain's capacity allowing it to more effectively learn. So my take-aways regarding exercise were to do some light activity more regularly, interweaving it between work sessions perhaps (to encourage more diffuse mode thinking) and also more moderate activity (to build a healthier brain). 
+The importance of exercise was stated several times during the course. It was spread about through the other material but it did seem important enough to potentially warrant its own video(s). It definitely made a large enough impact that I figured it deserved its own section in this write-up. 
+
+The most common mention of exercise during this course was as a useful activity to help engage the diffuse mode. If you exercise after working on a problem or trying to study a particular topic, during your exercise, the brain's diffuse mode is chipping away at those concepts. Even if it's not an intensive exercise like running, something as simple as a walk can really help the learning process. Some material was also cited to show that exercise helps the hippocampus grow new nerves. This increases your brain's capacity allowing it to more effectively learn. 
+
+So my take-aways regarding exercise were to do some light activity more regularly, interweaving it between work sessions perhaps (to encourage more diffuse mode thinking) and also more moderate activity (to build a healthier brain). 
 
 ### Miscellaneous 
 Those main ideas aside, there were a few more tidbits spread throughout the course. I've decided to collate those here. 
@@ -144,21 +152,27 @@ Apparently the first step if very important because it forces your brain to brea
 
 __*Don't edit while you write. It's like trying to clear the table while you're eating. Use touch typing, ignore your monitor!*__
 
-This came from a writing coach, Daphne Gray-Grant, during one of the interviews. It was a great video about the writing process and I've definitely tried to put this piece of advice into practice. It has helped a lot! When I go back and try to correct or edit my work, it often breaks the flow of the writing and I sometimes lose my train of thought. Sometimes, it's not even a case of losing the train of thought but I might lose the sentence I was about to try out. Trying to recall it, often failing, is frustrating and time-consuming. I find that if I just keep writing and perhaps after a particular section, I go back and do some editing, that works best. Sometimes these edits might just be going back and fixing typos. My writing software often highlights these in red and seeing too many of these underlines on the page can be distracting. Whenever I try to correct a typo immediately, the interruption definitely breaks the flow. I find that these bulk corrections also act as a very small reward. 
+This came from a writing coach, Daphne Gray-Grant, during one of the interviews. It was a great video about the writing process and I've definitely tried to put this piece of advice into practice. It has helped a lot! When I go back and try to correct or edit my work, it often breaks the flow of the writing and I sometimes lose my train of thought. Sometimes, it's not even a case of losing the train of thought but I might lose the sentence I was about to try out. Trying to recall it, often failing, is frustrating and time-consuming. 
+
+I find that if I just keep writing and perhaps after a particular section, I go back and do some editing, that works best. Sometimes these edits might just be going back and fixing typos. My writing software often highlights these in red and seeing too many of these underlines on the page can be distracting. Whenever I try to correct a typo immediately, the interruption definitely breaks the flow. I find that these bulk corrections also act as a very small reward. 
 
 Whenever your editing self tries to take over during the writing process, talk back to it: It's writing time now! 
 
 
 __*Too much highlighting: bad. Summaries in the margin: good.*__
 
-I think this is something that I've been getting an intuitive feel for but it was helpful hearing it explicitly stated. Highlighting often gives the illusion of understanding and it can feel better that simply staring at the page and trying to understand the concepts because you're actually doing something physical albeit easy. However, those words on the page belong to someone else and if you don't understand them, highlighting is similar to not working through the problem yourself. You can see what someone else has done and tell yourself that you understand the process but until you do it yourself, you don't. Enter summaries. By condensing the information before you, you are forcing your brain to chew and digest the information. You're also making it easier for the brain to remember since the summary probably contains less fluff, boiling the concept down to its bare essence. 
+I think this is something that I've been getting an intuitive feel for but it was helpful hearing it explicitly stated. Highlighting often gives the illusion of understanding and it can feel better that simply staring at the page and trying to understand the concepts because you're actually doing something physical albeit easy. However, those words on the page belong to someone else and if you don't understand them, highlighting is similar to not working through the problem yourself. You can see what someone else has done and tell yourself that you understand the process but until you do it yourself, you don't.
+
+Enter summaries. By condensing the information before you, you are forcing your brain to chew and digest the information. You're also making it easier for the brain to remember since the summary probably contains less fluff, boiling the concept down to its bare essence. 
 
 I think forming the habit of making summaries will take some time because the habit of highlighting is easier and more in-grained (likely due to its ease of application). However, making summaries is definitely a habit worth practicing and forming, especially because of how transferable it is. 
 
 
 __*Before restudying, try to recall!*__
 
-This was a new concept to me. Apparently, after you read about a particular concept, before you dive back in for another read, try to recall the information you've just read without looking (presumably this doesn't just apply to reading). This act of recall, this retrieval process, helps strengthen the memory. This can help with a particular concept even better than the aforementioned concept-mapping. Application wise, I think this can apply even when dealing with an old concept. For example, when trying to recall a particular function while writing some code, I've found in helpful to spend some time trying to recall the structure of the function before going to google it. By jumping straight to the latter, the information doesn't really stick and in the long run, all those searches add up in terms of time spent but more importantly, in breaking the flow. 
+This was a new concept to me. Apparently, after you read about a particular concept, before you dive back in for another read, try to recall the information you've just read without looking (presumably this doesn't just apply to reading). This act of recall, this retrieval process, helps strengthen the memory. This can help with a particular concept even better than the aforementioned concept-mapping. Application wise, I think this can apply even when dealing with an old concept. 
+
+For example, when trying to recall a particular function while writing some code, I've found in helpful to spend some time trying to recall the structure of the function before going to google it. By jumping straight to the latter, the information doesn't really stick and in the long run, all those searches add up in terms of time spent but more importantly, in breaking the flow. 
 
 
 __*There's an illusion that engineers are loners, engineering is a team sport.*__
