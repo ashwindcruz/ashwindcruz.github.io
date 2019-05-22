@@ -4,7 +4,11 @@ title: "Learning to Learn"
 date: 2019-05-07
 ---
 
-I recently completed Coursera's *[Learning How to Learn: Powerful mental tools to help you master tough subjects](https://www.coursera.org/learn/learning-how-to-learn/home/welcome)*. While this course seems targeted at high school and university students, there are many applicable lessons to those who don't fall in this demographic. Upon completing the course, I was recommended Coursera's *[Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential](https://www.coursera.org/learn/mindshift/home/welcome)*. I think this second course will have similar content to the first but targeted at an older demographic. I'll be starting this soon but before I do, I wanted to summarize some of the key ideas that I found especially insightful and helpful from *Learning How to Learn*. 
+I recently the following on Coursera:
+* [Learning How to Learn: Powerful mental tools to help you master tough subjects](https://www.coursera.org/learn/learning-how-to-learn/home/welcome)  
+* [Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential](https://www.coursera.org/learn/mindshift/home/welcome)  
+
+The first course listed was created earlier with mostly a general audience in mind with some focus towards high school and university students. The second course was a follow up targeted at an older audience, especially those with careers. However, I found that the first course actually had a lot more useful, practical information compared to the second. If you had to pick one, definitely go with the first. Here are some of the key ideas that I found especially insightful and helpful from these courses. 
 
 __There's quite a bit here but you may only be interested in some of the content. Feel free to skip through as you please!__
 
@@ -106,7 +110,11 @@ He provided further elaboration on the memory palace technique:
 
 So here there are two levels of visualization: the concept and where it is located. The more you can do to leverage your brain's in-built ability to memorize visual and spatial data, the easier a time you'll have trying to memorize concepts. 
 
-On the topic of memory, most of us know that there is a long-term memory and a short-term memory. The analogies that this course used when describing these were helpful to me. Long-term memory is like a storage warehouse. It can hold a lot of information but retrieving any one piece of information requires some effort. However, by practicing retrieval, you can become faster at this process. It's like learning the layout of the warehouse, how to better navigate it, and how to more efficiently take stuff off the shelves. Short-term memory on the other hand is like a blackboard. At any given time, it can't hold much but at a glance, you can see all that's on there. When you chunk concepts, they take up less space on the blackboard allowing you to write more on. So the better you can chunk, the more you can hold in your short-term memory.  
+On the topic of memory, most of us know that there is a long-term memory and a short-term memory. The analogies that this course used when describing these were helpful to me. 
+
+Long-term memory is like a storage warehouse. It can hold a lot of information but retrieving any one piece of information requires some effort. However, by practicing retrieval, you can become faster at this process. It's like learning the layout of the warehouse, how to better navigate it, and how to more efficiently take stuff off the shelves. 
+
+Short-term memory on the other hand is like a blackboard. At any given time, it can't hold much but at a glance, you can see all that's on there. When you chunk concepts, they take up less space on the blackboard allowing you to write more on. So the better you can chunk, the more you can hold in your short-term memory.  Additionally, you should try and clear your short term memory of unnecessary content when possible. For example, when you recall an errand you need to do, write it down and clear your mind of it. You can place this note somewhere you know you'll come across later and this way you don't have to focus on it presently. Another approach here, for some smaller tasks, is to just get it out of the way. If there is some small chore that you're meant to do and you have the opportunity to just get it out of the way early on, do so! Your mind won't have to expend energy remembering to get to the task or the todo list later. 
 
 
 ### Optimizing Sleep
@@ -117,7 +125,7 @@ I've come across this in multiple sources but when push comes to shove, sleep is
 
 For one, they explicitly state that sleeping flushes the brain clean. I can't recall the technicalities of it but during sleep, the brain gets a chance to refresh itself. However, working on something before sleeping or explicitly setting in your mind that you want to focus on something (just before sleep) will encourage the brain to dream about this. I don't think anyone can make claims that this will work all the time but I have often found that whatever I'm dwelling on before sleeping often comes back to me while dreaming. By encouraging this, you are encouraging the diffuse mode of your brain to tinker away, forming connections that you might not have been able to during the focused mode. 
 
-Another helpful tip from this course was to jot down your unfinished todos before you hit the hay. These tasks likely take up space in your working memory. By writing them down, you free up space in your working memory and allow the brain to better recharge. An added benefit of this is that by jotting it down, you're focusing explicitly on it, potentially allowing your diffuse mind to think about them while you sleep. 
+Another helpful tip from this course was to jot down your unfinished todos before you hit the hay. These tasks likely take up space in your working memory. By writing them down, you free up space in your working memory and allow the brain to better recharge. Aside from todos, also write down problems you're facing before you hit the hay. This allows your diffuse mind to think about the todos and the problems while you sleep. 
 
 ### Exercise Benefits
 The importance of exercise was stated several times during the course. It was spread about through the other material but it did seem important enough to potentially warrant its own video(s). It definitely made a large enough impact that I figured it deserved its own section in this write-up. 
@@ -217,6 +225,13 @@ __*Hard start - jump to easy*__
 
 When you tackle a challenge, first start with a hard sub-task but jump to an easy problem once you've got stuck. This will get your diffuse mode working on the hard problem. I used to think it was easier to just get the easy problems out of the way but by using this method and spending some initial time on the hard task, some of your mind is still chipping away at the hard problem while you tackle the easier ones. 
 
+__*Music*__
+
+In general, do what's best for you. If you find that particular styles of music help you learn better, go along with it. There is some research showing that music with lyrics tends to be more distracting. However, I've found that when working on droll, repetitive tasks, I prefer music that is more engaging as it better helps me crunch through the work. When I need to instead focus deeply on the task at hand and be more creative, then lighter, more relaxing music helps. 
+
+Additionally, while a little bit of music of background noise (such as the chatter at a coffee shop) can be distracting, this distraction can engage the diffuse mode. So if you're engaging the focused mode and find yourself hitting a dead end, tune in some music and let the diffuse mode have a go. 
+
+
 ### Conclusion
 
-That just about wraps up this post. I hope it proved useful and provided ways for you to enhance your learning capabilities. Once I've completed the next course on this series (*[Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential](https://www.coursera.org/learn/mindshift/home/welcome)*), if it proves informative, I'll write up another post like this and introduce a link to that post at the bottom of this. Until then, enjoy learning!  
+That just about wraps up this post. I hope it proved useful and provided ways for you to enhance your learning capabilities. Until next time, enjoy learning!  
