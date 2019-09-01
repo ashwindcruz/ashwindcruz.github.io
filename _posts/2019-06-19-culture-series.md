@@ -1,7 +1,8 @@
 Recently, I binged through the Culture series by Ian M. Banks. It was an amazing read and I thought a write up about it might help ground the experience and help the books stick a little better in my mind. I don't recall that I've done this for any other books, series or otherwise. Partly it's because I've only recently started seriously considering the benefits of writing but it's also because reading through the Culture series left enough of an impact on me that I thought writing about it would be beneficial. 
 
-This blog post provides a summary of each book as well as the overarching themes across the series that stood out to me. I imagine there are 3 types of readers out there: 
-- Those of you who have read the series and would like to see what someone else (me!) who also read it, made of it
+This blog post provides a summary of each book as well as the overarching themes across the series that stood out to me. 
+So why read this? I imagine there are 3 types of readers out there: 
+- Those of you who have read the series and would like to see what someone else (me!) who also read it, made of it.
 - Those of you who haven't read the series but have heard about it and want more information than a brief synopsis before committing to a full read yourself. Also, you're not too fussed about spoilers.
 - Like the group above but you do care about spoilers. **This post has spoilers so turn back now!**
 
@@ -26,7 +27,7 @@ It's interesting that the phrase is 'not to feel useless' as opposed to 'not to 
 
 These snippets are just some of the great writing Ian has to offer. I'll end this summary with one of his funnier quotes:
 
->> Emphatize with stupidity and you're halfway to thinking like an idiot. 
+>> Empathize with stupidity and you're halfway to thinking like an idiot. 
 
 ### The Player of Games
 This was my introduction to the Culture series and it was a fun starting point. I did get a little lost at points. Banks throws you right into the universe with scarce an explanation of what is going on. What are Minds and Drones? What are their capabilities? What's the Culture about? Even if I had read Consider Phlebas first, I still would have been quite lost. At the time, I enjoyed the deep dive into the universe, piecing together this jigsaw of a universe as I went along. Having read the whole series, I think that this is perhaps what he intended: learning a little bit more about the Culture and the universe they're set in with each passing book. 
