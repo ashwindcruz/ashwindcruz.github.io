@@ -1,8 +1,8 @@
-A little while ago, I read *Letters from a Stoic* by Seneca (translated and edited by Robin Campbell). I got a lot out of reading *Letters* and knew that if I wrote about what stood out to me, I would better remember it and have an easier time applying it to my life. I also wanted to encourage others to read it and thought that sharing some of the key ideas from the book might convince them to do so.
+A little while ago, I read *Letters from a Stoic* by Seneca (translated and edited by Robin Campbell). I got a lot out of reading *Letters* and wanted to encourage others to read it and thought that sharing some of the key ideas from the book might convince them to do so.
 
 Just a head's up: this blog is a long read. I thought about breaking it up into smaller pieces but a lot of Seneca's ideas are quite interlinked and there are connections between the sections so I decided to keep everything together. With that said, you can skip ahead to sections that you think are more relevant and interesting to you and it will still make sense.
 
-As I went about writing this blog, I found myself engaging in more self-reflection than I had anticipated. The process of writing forced me to clarify my thoughts on a lot of topics and instead of a general summary, I found that the content got more personal as I started to scrutinize my own experiences more closely. What did I see needed changing in my life? Which memories did certain quotes jolt in my mind? Why did certain sections hit me harder than others? This post definitely morphed more into a guide for me more than anyone else but I still think that others will find this useful. So this is mostly for me, but if you're here, I welcome you to it. I hope you find relatable, useful advice.  
+As I went about writing this blog, I found myself engaging in more self-reflection than I had anticipated. The process of writing forced me to clarify my thoughts on a lot of topics and instead of a general summary, I found that the content got more personal as I started to scrutinize my own experiences more closely. What did I see needed changing in my life? Which memories did certain quotes jolt in my mind? Why did certain sections hit me harder than others? This post definitely morphed more into a guide for me more than anyone else but I still think that others will find this useful.
 
 However, I do proffer the following disclaimer, that Campbell wrote in the preface to his translation:
 > Books, and Dishes have this Common Fate; there was never any One, of Either of them, that pleas’d All Palates.
@@ -25,8 +25,6 @@ So that's Stoicism in a nutshell. I'll also add that Seneca has a very no-nonsen
 And this is what he prefers instead:
 
 > My advice is really this: what we hear the philosophers saying and what we find in their writings should be applied in our pursuit of the happy life. We should hunt out the helpful pieces of teaching, and the spirited and noble-minded sayings which are capable of immediate practical application – not far-fetched or archaic expressions or extravagant metaphors and figures of speech – and learn them so well that words become works.
-
-I would bet that 'a syllable nibbles cheese' is probably one of those figures of speech that he's not fond of. 
 
 So even before you progress further into this blog or before reading *Letters* for yourself, I think you have an idea of the kind of person Seneca is and what you can expect from his writings. Given the attitude he has towards philosophy, you'll be sure to gain a lot of practical advice from what he has to say.
 
@@ -56,9 +54,10 @@ So, what are some of these common issues that Seneca thinks we have to deal with
 
 > *Grief and vengeful Care have set their couch,*
 > *And pallid Sickness dwells, and drear Old Age*
+
 > This is the company in which you must live out your days. Escape them you cannot, scorn them you can. And scorn them you will if by constant reflection you have anticipated future happenings. Everyone faces up more bravely to a thing for which he has long prepared himself, sufferings, even; being withstood if they have been trained for in advance. Those who are unprepared, on the other hand, are panic-stricken by the most insignificant happenings. And since it is invariable unfamiliarity that makes a thing more formidable than it really is, this habit of continual reflection will ensure that no form of adversity finds you a complete beginner.
 
-It's a little more heavy handed than what most of us deal with on a day to day basis (I hope)! However, given that these will probably happen to us at some point, advice on dealing with them will definitely come in handy. Also, some of the steps we take to deal with these big issues will probably also help us in dealing with smaller ones. 
+Issues like grief and sickness are probably a little more heavy handed than what most of us deal with on a day to day basis (I hope)! However, given that these will probably happen to us at some point, advice on dealing with them will definitely come in handy. Also, some of the steps we take to deal with these big issues will probably also help us in dealing with smaller ones. 
 
 Seneca's advice on handling these issues is simple and applicable to both big and small woes: anticipate them and try to have a plan for them. I can definitely attest that I am most taken aback when I am faced with a difficulty that I did not foresee at all. I have found that if I expect that things may go wrong, even when I am not sure how exactly I will deal with it, this softens the blow a great deal. I don't think Seneca is advocating for one to be pessimistic but it is important to prepare to face difficulties beforehand. Then when they hit, you can spend more time getting through them instead of being buffeted by them with no solution in sight.
 
