@@ -1,5 +1,3 @@
-## Why this book?
-
 I've never been a big history fan. Too many names and dates to memorize. But now, free from the pressure of having to learn for the sake of getting good grades and free to choose pursuing the topics that interested me, I thought it would be a good idea to learn a little history. Having grown up in different countries (first Malaysia, then Australia, and now England) with very different backstories, I've always known about the differences between countries but never given it much thought. Growing up, we were told the Brits got ahead because they had superior weaponry and that was that. But with that question answered, then the next one is: well why did they have those weapons? The more I thought about this, the more curious I become about why certain countries got ahead.
 
 When I heard about 'Guns, Germs, and Steel' (GG&S) and saw some of the quotes, like the one below:
